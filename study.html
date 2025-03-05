@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="styles.css">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXTI-XTI</title> 
+</head>
+<body>
+    <header>
+        <h1>AXTI-XTI</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#music">Музыка</a></li>
+                <li><a href="#archive">Архив</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#gigs">Ближайшие концерты</a></li>
+                <li><a href="#subscribe">Подписаться</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>О нас:</h2>
+            <p>Axti-xti - это Женя, Даниил и Тимур.</p>
+            <p>Мы делаем музыку уже почти 5 лет.</p>
+        </section>
+
+        <section id="music">
+            <h2>Наша музыка:</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCq0hYIGNo6ZkconFVyz3lzg">youtube</a></li>
+                <li><a href="https://band.link/axti_xti">bandlink</a></li>
+            </ul>
+        </section>
+
+        <section id="archive">
+            <h2>Архив</h2>
+            <p><img src="image.jpeg" alt="Axti-xti photo"></p>
+        </section>
+
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p>Связь с нами:</p>
+            <ul>
+                <li><a href="https://vk.com/axtixti">VK</a></li>
+                <li><a href="https://t.me/axtixti">telegram</a></li>
+            </ul>
+        </section>
+
+        <section id="gigs">
+            <h2>Ближайшие концерты:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Место</th>
+                        <th>Ссылка</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>23.03.2025</td>
+                        <td>Обычная Галерея</td>
+                        <td><a href="https://vk.com/event229296923">Звуки Мяу</a></td>
+                    </tr>
+                    <tr>
+                        <td>26.04.2025</td>
+                        <td>SECRET PLACE</td>
+                        <td>Будет позже</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="subscribe">
+            <h2>Подписаться на новости</h2>
+            <form action="/subscribe" method="POST">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Как звать, родной?" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Мыло оставь, наберём" required>
+                <label for="newsletter">Выбери интересующую рассылку</label>
+                <select id="newsletter" name="newsletter">
+                    <option value="music">Релизы музла</option>
+                    <option value="gigs">Анонсы концертов</option>
+                </select>
+                <label for="message">Оставь нам сообщение</label>
+                <textarea id="message" name="message" placeholder="Не стесняйся"></textarea>
+
+                <button type="submit">Подписаться</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 AXTI-XTI. Все права защищены.</p>
+    </footer>
+</body>
+</html>           
